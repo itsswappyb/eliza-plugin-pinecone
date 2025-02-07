@@ -1,7 +1,7 @@
 import { Plugin } from "@elizaos/core";
 import { chatWithAgent } from "./actions/chatWithAgent";
 
-export const pineconeBetaPlugin: Plugin = {
+export const pinceconePluginBeta: Plugin = {
     name: "pinecone-beta",
     description: "Pinecone Beta RAG Agent plugin for Eliza",
     actions: [chatWithAgent],
@@ -11,4 +11,4 @@ export const pineconeBetaPlugin: Plugin = {
     // providers supply information and state to the agent's context, help agent access necessary data
     providers: [],
 };
-export default pineconeBetaPlugin;
+export default pinceconePluginBeta;
