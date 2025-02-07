@@ -23,18 +23,18 @@ export interface UploadFileResponse {
     error_message: string;
 }
 
-interface ChatMessage {
+export interface ChatMessage {
     role: string;
     content: string;
 }
 
-interface TokenUsage {
+export interface TokenUsage {
     prompt_tokens: number;
     completion_tokens: number;
     total_tokens: number;
 }
 
-interface FileReference {
+export interface FileReference {
     status: string;
     id: string;
     name: string;
@@ -47,7 +47,7 @@ interface FileReference {
     error_message: string | null;
 }
 
-interface Citation {
+export interface Citation {
     position: number;
     references: Array<{
         file: FileReference;
@@ -62,4 +62,10 @@ export interface ChatResponse {
     model: string;
     usage: TokenUsage;
     citations: Citation[];
+}
+
+export interface ChatRequest {
+    messages: ChatMessage[];
+    stream: boolean;
+    model: string;
 }
