@@ -1,5 +1,4 @@
 import { Plugin } from "@elizaos/core";
-// import { createAgent } from "./actions/createAgent";
 import { chatWithAgent } from "./actions/chatWithAgent";
 
 export const pineconeBetaPlugin: Plugin = {
