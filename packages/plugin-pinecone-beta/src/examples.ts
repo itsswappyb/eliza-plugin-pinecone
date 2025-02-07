@@ -1,6 +1,6 @@
 import { ActionExample } from "@elizaos/core";
 
-export const chatWithAgentExample: ActionExample[][] = [
+export const chatWithAgentExamples: ActionExample[][] = [
     [
         // TODO: replace these with your own relevant examples
         // {
