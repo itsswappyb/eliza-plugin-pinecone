@@ -1,9 +1,11 @@
 {
     "name": "trump",
-    "clients": [],
-    "modelProvider": "openai",
+    "clients": ["telegram"],
+    "modelProvider": "gaianet",
     "settings": {
-        "secrets": {},
+        "secrets": {
+            "TELEGRAM_BOT_TOKEN": ""
+        },
         "voice": {
             "model": "en_US-male-medium"
         }
